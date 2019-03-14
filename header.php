@@ -48,11 +48,20 @@
 			<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html_e( 'Primary Menu', 'cassieunderscore' ); ?></button>
 			<?php
 			wp_nav_menu( array(
-				'theme_location' => 'menu-1',
+				'theme_location' => 'primary-menu',
 				'menu_id'        => 'primary-menu',
 			) );
 			?>
 		</nav><!-- #site-navigation -->
+
+
+<?php if (get_theme_mod( 'cassieunderscore_facebook_url' )) { ?>
+	<a class="icon facebook" href="<?php echo get_theme_mod('cassieunderscore_facebook_url'); ?> ">Facebook</a>
+	<?php
+
+} ?>
+
+
 	</header><!-- #masthead -->
 
 	<div id="content" class="site-content">

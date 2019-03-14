@@ -30,6 +30,14 @@
 	</footer><!-- #colophon -->
 </div><!-- #page -->
 
+<?php
+			wp_nav_menu( array(
+				'theme_location' => 'footer-menu',
+				'menu_id'        => 'footer-menu',
+				'container' => false,
+			) );
+			?>
+
 <?php wp_footer(); ?>
 
 </body>
